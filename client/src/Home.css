@@ -1,0 +1,18 @@
+.home {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 60px;
+}
+
+.home li {
+  margin-bottom: 5px;
+}
+
+.intro h4 {
+  margin-bottom: -10px;
+}
+
+.changelog h4 {
+  margin-bottom: 5px;
+}

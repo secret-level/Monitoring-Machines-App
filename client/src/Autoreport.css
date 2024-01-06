@@ -1,0 +1,28 @@
+.autoreport {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 70px;
+}
+
+.autoreportTable {
+  width: 800px;
+  text-align: center;
+}
+
+.autoreportTableHead {
+  font-weight: bold;
+}
+
+.autoreportTable tr {
+  font-size: 18px;
+}
+
+tr:nth-child(odd) {
+  background: #efefef;
+}
+
+.autoreportTable td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

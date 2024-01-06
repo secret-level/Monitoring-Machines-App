@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Autoreport </title>
+    <style>
+      .autoreport {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 70px;
+      }
+
+      .autoreportTable {
+        width: 800px;
+        text-align: center;
+      }
+
+      .autoreportTableHead {
+        font-weight: bold;
+      }
+
+      .autoreportTable tr {
+        font-size: 18px;
+      }
+
+      tr:nth-child(odd) {
+        background: #efefef;
+      }
+
+      .autoreportTable td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="autoreport">
+      <table class="autoreportTable">
+        <thead>
+          <tr class="autoreportTableHead">
+            <td>Stroj</td>
+            <td>Id</td>
+            <td>Deluje</td>
+            <td>Alarm</td>
+            <td>Unix Time</td>
+            <td>Datum</td>
+          </tr>
+        </thead>
+        <tbody>
+        <%  for (let i = 0; i < dataAutoreport.length; i++)
+            {
+              dataAutoreport[i][1].forEach((element) =>
+              { %>
+                <tr>
+                  <td><%= dataAutoreport[i][0] %></td>
+                  <td><%= element.id %></td>
+                  <td><%= element.deluje %></td>
+                  <td><%= element.alarm %></td>
+                  <td><%= element.unix_timestamp %></td>
+                  <td><%= element.readable_time.toString().slice(4, 24) %></td>
+               </tr>
+          <%  });
+            } %> 
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

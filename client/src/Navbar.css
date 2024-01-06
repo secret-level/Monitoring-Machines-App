@@ -1,0 +1,37 @@
+.navbar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  
+  float: left;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  background-color: #efefef;
+}
+
+.navbar li {
+  float: left;
+  width: 20%;
+}
+
+.navbar li a{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border: 1px solid #ccc;
+}
+
+.navbar li a:hover {
+  color: #c00;
+}
+
+.navbar li a:active {
+  color: #c00;
+  background-color: #ffffff;
+}

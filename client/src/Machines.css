@@ -1,0 +1,49 @@
+.machines {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 70px;
+}
+
+.machinesButton {
+  width: 9%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  color: #069;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.machinesButton:hover {
+  color: #c00;
+}
+
+.machinesButton:active {
+  color: #c00;
+  background-color: #ffffff;
+}
+
+.machinesTable {
+  width: 800px;
+  text-align: center;
+}
+
+.machinesTableHead {
+  font-weight: bold;
+}
+
+.machinesTable tr {
+  font-size: 18px;
+}
+
+tr:nth-child(odd) {
+  background: #efefef;
+}
+
+.machinesTable td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

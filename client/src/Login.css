@@ -1,0 +1,24 @@
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login h1 {
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.login input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.login input:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
